@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Comparison Table</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <h1>Super basic JavaScript</h1>
+<body class="bg-light">
+
+    <div class="container my-5">
+        <h1 class="text-center text-primary">Homework Day 7 | Super Basic JavaScript</h1>
+        <p class="text-center text-muted">Open the console to see the results</p>
+
+        <h3 class="mt-4">Comparison Table of var, let, const in JavaScript</h3>
+
+        <table class="table table-bordered table-striped mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>Feature</th>
+                    <th>var</th>
+                    <th>let</th>
+                    <th>const</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Scope (Where the variable can be used?)</b></td>
+                    <td>Available throughout the entire function (if declared inside a function)</td>
+                    <td>Available only inside the block `{}` where it was declared</td>
+                    <td>Available only inside the block `{}` where it was declared</td>
+                </tr>
+                <tr>
+                    <td><b>Can the value be changed after declaration?</b></td>
+                    <td class="text-success"><b>✅ Can be changed</b></td>
+                    <td class="text-success"><b>✅ Can be changed</b></td>
+                    <td class="text-danger"><b>❌ Cannot be changed</b></td>
+                </tr>
+                <tr>
+                    <td><b>Can it be redeclared with the same name?</b></td>
+                    <td class="text-success"><b>✅ Can be redeclared</b></td>
+                    <td class="text-danger"><b>❌ Cannot be redeclared</b></td>
+                    <td class="text-danger"><b>❌ Cannot be redeclared</b></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="mt-4 text-muted">
+            <b>P.S:</b> If you assign a value to a variable without using var, let, or const, 
+            it will implicitly become a global variable.
+        </p>
+    </div>
+
+    <!-- Nhúng 3 file JavaScript -->
     <script src="Homework.js"></script>
     <script src="Exercises.js"></script>
     <script src="AdditionalChallenges.js"></script>
+
 </body>
 </html>
